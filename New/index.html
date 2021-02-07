@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="brand">
+                <a href="#"><img id="logo" src="Images/logo.png" alt=""></a>
+                <div class="menubar" id="menubar">
+                    <div class="titles">
+                        <div class="site-title">
+                            <h2>My Inspiration</h2>
+                        </div>
+                        <div class="site-tag">
+                            <p>by Invision</p>
+                        </div>
+                    </div>
+                    <div class="triangle-down" id="open-close-menu" onclick="openClose()"></div>
+                    <div class="menu hide" id="menu">
+                        <ul>
+                            <a href="#">
+                                <li><img class="menu-icon" src="Images/1.jpg" alt="">Search</li>
+                            </a>
+                            <a href="#">
+                                <li><img class="menu-icon" src="Images/1.jpg" alt="">Colors</li>
+                            </a>
+                            <a href="#">
+                                <li><img class="menu-icon" src="Images/logo.png" alt="">Collection</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="search-bars">
+                <div>
+                    <input type="search" placeholder="Search on Muzli">
+                </div>
+                <div>
+                    <input type="search" placeholder="or Google">
+                </div>
+            </div>
+            <div class="icon-bar">
+                <div>
+                    <button class="tooltip">Submit a Link <span class="tooltiptext">Share something with
+                            us!</span></button>
+                </div>
+                <div class="icons">
+                    <div class="icon-box tooltip2"><i class="fa fa-bookmark" id="bookmark"></i><span
+                            class="tooltiptext2">Saved Items</span></div>
+                    <div class="icon-box tooltip2"><i class="fa fa-bell-o" id="notification"></i><span
+                            class="tooltiptext2">Notifications</span></div>
+                    <div class="icon-box tooltip2"><i class="fa fa-bookmark" id="profile"></i><span
+                            class="tooltiptext2">Settings</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <ul class="hide" id="shide">
+            <li><a href="#"><img src="https://i.pinimg.com/236x/41/07/8f/41078fbcc6d2ad40c4460f2edace621e.jpg" alt=""></a></li>
+            <span class="seperator"></span>
+            <li><a href="https://www.producthunt.com/"><img src="https://cdn-images-1.medium.com/max/1200/1*6gClJdrFEpPAqvT1Oo5gPQ.jpeg" alt=""></a></li>
+            <li><a href="https://techcrunch.com/"><img src="https://techcrunch.com/wp-content/themes/techcrunch-2017/images/opengraph-default.png" alt=""></a></li>
+            <li><a href="https://www.theverge.com/"><img src="https://media-exp1.licdn.com/dms/image/C4E0BAQFvbt8pZQPM2w/company-logo_200_200/0/1519898639410?e=2159024400&v=beta&t=ybl82xVQ0QB-_zoTisytutElyxScS-BiHS7PAJlPlvc" alt=""></a></li>
+            <li><a href="https://www.smashingmagazine.com/"><img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/26d46869-bad3-4702-ba05-4053a7cb6473/smashing-logo-avatar-opt.png" alt=""></a></li>
+            <li><a href="https://www.engadget.com/"><img src="https://i.pinimg.com/280x280_RS/1b/e1/18/1be118b9409c3a0400ad47e38076fa3b.jpg" alt=""></a></li>
+            <li><a href="https://codepen.io/"><img src="https://cpwebassets.codepen.io/assets/social/facebook-default-05cf522ae1d4c215ae0f09d866d97413a2204b6c9339c6e7a1b96ab1d4a7340f.png" alt=""></a></li>
+            <li><a href="https://news.ycombinator.com/"><img src="https://avatars.githubusercontent.com/u/4703068?s=280&v=4" alt=""></a></li>
+            <li><a href="https://mashable.com/"><img src="https://yt3.ggpht.com/ytc/AAUvwnhWeV9XPgesl-8O_XtwN0MORdyOZ583auPfD_xgln4=s900-c-k-c0x00ffffff-no-rj" alt=""></a></li>
+            <li><a href="#"><img src="Images/logo.png" alt=""></a></li>
+        </ul>
+        <div class="pull-push" id="arrow-div" onclick="pushPull()"><i class="arrow right" id="arrow"></i></div>
+    </div>
+    <div class="content-image">
+        <div class="grid-container">
+            <div class="featured-container">
+                <div class="img-tile">
+                    <img id="c-img" src="https://wallpapercave.com/wp/wp6153478.jpg" alt="">
+                    <div class="share">
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-twitter.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-linkedin.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-picasa.png" alt="">
+                        </div>
+                    </div>
+                    <span class="filter"></span>
+                    <div class="img-info">
+                        <div class="img-info-titles">
+                            <h3>First Design Inspiration</h3>
+                            <p>medium.muzli</p>
+                        </div>
+                        <div class="img-options">
+                            <div id="options">
+                                <div class="img-option-box tooltip3">
+                                    <i class="fa fa-bookmark" id="bookmark"></i><span
+                                    class="tooltiptext3">Save item</span>
+                                </div>
+                                <div class="img-option-box tooltip3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i><span
+                                    class="tooltiptext3">More options</span>
+                                </div>
+                            </div>
+                            <div class="views">
+                                <div class="views-option tooltip3">
+                                    <i class="fa fa-eye" aria-hidden="true">5.5k</i><span
+                                    class="tooltiptext3">Views</span>
+                                </div>
+                                <div class="views-option tooltip4">
+                                    <i class="fa fa-share" aria-hidden="true">5</i><span
+                                    class="tooltiptext4">Share</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="sidekicks s1">
+                <div class="img-tile">
+                    <img id="c-img" src="https://flash.sonypictures.com/ist/backgrounds/fi1.jpg" alt="">
+                    <div class="share">
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-twitter.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-linkedin.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-picasa.png" alt="">
+                        </div>
+                    </div>
+                    <div class="img-info">
+                        <div class="img-info-titles">
+                            <h3>First Design Inspiration</h3>
+                            <p>medium.muzli</p>
+                        </div>
+                        <div class="img-options">
+                            <div id="options">
+                                <div class="img-option-box tooltip3">
+                                    <i class="fa fa-bookmark" id="bookmark"></i><span
+                                    class="tooltiptext3">Save item</span>
+                                </div>
+                                <div class="img-option-box tooltip3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i><span
+                                    class="tooltiptext3">More options</span>
+                                </div>
+                            </div>
+                            <div class="views">
+                                <div class="views-option tooltip3">
+                                    <i class="fa fa-eye" aria-hidden="true">5.5k</i><span
+                                    class="tooltiptext3">Views</span>
+                                </div>
+                                <div class="views-option tooltip4">
+                                    <i class="fa fa-share" aria-hidden="true">5</i><span
+                                    class="tooltiptext4">Share</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="filter"></span>
+                    </div>
+                </div>                
+            </div>
+            <div class="sidekicks s2">
+                <div class="img-tile">
+                    <img id="c-img" src="https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                    <div class="share">
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-twitter.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-linkedin.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-picasa.png" alt="">
+                        </div>
+                    </div>
+                    <span class="filter"></span>
+                    <div class="img-info">
+                        <div class="img-info-titles">
+                            <h3>First Design Inspiration</h3>
+                            <p>medium.muzli</p>
+                        </div>
+                        <div class="img-options">
+                            <div id="options">
+                                <div class="img-option-box tooltip3">
+                                    <i class="fa fa-bookmark" id="bookmark"></i><span
+                                    class="tooltiptext3">Save item</span>
+                                </div>
+                                <div class="img-option-box tooltip3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i><span
+                                    class="tooltiptext3">More options</span>
+                                </div>
+                            </div>
+                            <div class="views">
+                                <div class="views-option tooltip3">
+                                    <i class="fa fa-eye" aria-hidden="true">5.5k</i><span
+                                    class="tooltiptext3">Views</span>
+                                </div>
+                                <div class="views-option tooltip4">
+                                    <i class="fa fa-share" aria-hidden="true">5</i><span
+                                    class="tooltiptext4">Share</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="sidekicks s3">
+                <div class="img-tile">
+                    <img id="c-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkfefJf3Y0UN31rsm5GIo8d0qTplefVDecwg&usqp=CAU" alt="">
+                    <div class="share">
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-twitter.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-linkedin.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-picasa.png" alt="">
+                        </div>
+                    </div>
+                    <span class="filter"></span>
+                    <div class="img-info">
+                        <div class="img-info-titles">
+                            <h3>First Design Inspiration</h3>
+                            <p>medium.muzli</p>
+                        </div>
+                        <div class="img-options">
+                            <div id="options">
+                                <div class="img-option-box tooltip3">
+                                    <i class="fa fa-bookmark" id="bookmark"></i><span
+                                    class="tooltiptext3">Save item</span>
+                                </div>
+                                <div class="img-option-box tooltip3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i><span
+                                    class="tooltiptext3">More options</span>
+                                </div>
+                            </div>
+                            <div class="views">
+                                <div class="views-option tooltip3">
+                                    <i class="fa fa-eye" aria-hidden="true">5.5k</i><span
+                                    class="tooltiptext3">Views</span>
+                                </div>
+                                <div class="views-option tooltip4">
+                                    <i class="fa fa-share" aria-hidden="true">5</i><span
+                                    class="tooltiptext4">Share</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="sidekicks s4">
+                <div class="img-tile">
+                    <img id="c-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNu9SoQgjPYMAz3NzxLA6s_k0l3mqh9HMjFQ&usqp=CAU" alt="">
+                    <div class="share">
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-facebook.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-twitter.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-linkedin.png" alt="">
+                        </div>
+                        <div class="social-icon-box"><img src="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons/webicon-picasa.png" alt="">
+                        </div>
+                    </div>
+                    <span class="filter"></span>
+                    <div class="img-info">
+                        <div class="img-info-titles">
+                            <h3>First Design Inspiration</h3>
+                            <p>medium.muzli</p>
+                        </div>
+                        <div class="img-options">
+                            <div id="options">
+                                <div class="img-option-box tooltip3">
+                                    <i class="fa fa-bookmark" id="bookmark"></i><span
+                                    class="tooltiptext3">Save item</span>
+                                </div>
+                                <div class="img-option-box tooltip3">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i><span
+                                    class="tooltiptext3">More options</span>
+                                </div>
+                            </div>
+                            <div class="views">
+                                <div class="views-option tooltip3">
+                                    <i class="fa fa-eye" aria-hidden="true">5.5k</i><span
+                                    class="tooltiptext3">Views</span>
+                                </div>
+                                <div class="views-option tooltip4">
+                                    <i class="fa fa-share" aria-hidden="true">5</i><span
+                                    class="tooltiptext4">Share</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html3
