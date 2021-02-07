@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{   
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .navbar{
+    margin-right: 20px;
+}
+.brand{
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: lighter;
+}
+ul {
+    list-style-type: none;
+    margin: auto;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+li a:active{
+    border-bottom: 1px solid white;
+}
+li a:hover{
+    border-bottom: 1px solid white;
+}
+.container1{
+    position: relative;
+}
+.container1 img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.container1 .heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.container1 .heading .h1, .desc{
+    margin: 20px;
+    font-weight: lighter;
+}
+.container2{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.container2 .cont{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.container2 .cont .opt{
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+.container2 .cont .opt .opt-box{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+.container2 .cont .opt .opt-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.container2 .cont .opt .opt-box .opt-desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.container2 .cont .opt .opt-box .opt-desc h3{
+    font-weight: lighter;
+}
+.img-filter{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 40%;
+}
+.h-radius{    
+    border-radius: 50%;
+}
+.solid-nav{
+    background-color:rgb(4, 9, 35);
+}
+.transparent-nav{
+    background-color:rgb(25, 38, 87, 0.0);    
+}
+.container3{
+    width: 100%;
+    height: 60vh;
+    background-image: url(images/wc.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+}
+.container3 .service{
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.container3 .service h2, p{    
+    text-shadow: 0px 0px 8px black;
+}
+.container3 .service .s-title, .s-desc{
+    margin: 20px 0px;
+}
+.container3 .service .s-desc p{
+    margin: 10px 0px;
+}
+.container4{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container4 .product{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container4 .product .p-image, .p-desc{
+    min-width: 300px;
+    max-width: 350px;
+    min-height: 180px;
+    max-height: 250px;
+    padding: 10px;
+}
+.container4 .product .p-image img{
+    width: 100%;
+    object-fit: none;
+}
+.container4 .product .p-desc{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.container4 .product .p-desc .p-name, .p-desc{
+    display: block;
+}
+.container4 .product .p-desc .p-name h3{
+    font-size: xx-large;
+}
+.container4 .product .p-desc .buttons{
+    margin-top: 10px;
+}
+.container4 .product .p-desc .buttons a{
+    margin: 10px;
+}
+.container4 .product .p-desc .buttons button{
+    border: 1px solid rgb(4, 9, 35);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.footer{
+    width: 100%;
+    background-color: rgb(4, 9, 35);
+    color: white;
+    padding: 20px;
+}
+.footer .f-data{
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+.footer .f-data .titl a{
+    text-decoration: none;
+    color: white;
+}
+.footer .legal a{
+    color: white;
+}
+.footer #pr{
+    border-left: 1px solid black;
+}
+.titl, .copyright, .legal{
+    margin: 5px;
+}
